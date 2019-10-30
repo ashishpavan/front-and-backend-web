@@ -1,0 +1,102 @@
+<!--Create a form using HTML CSS(name, surname, gender, address, phone no., email). 
+    Perform client side Validation using jQuery. 
+    On clicking the submit button,Access HTML form data using jQuery and show data using alert()-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>form_jquery</title>
+</head>
+<body>
+    <h3></h3>
+    <div>
+        <label for="name">
+            <p>Name</p>
+            <input type="text" id="name"><br>
+        </label>
+        <label for="surname">
+            <p>Surname</p>
+            <input type="text" id="surname"><br>
+        </label>
+        <label for="gender">
+            <p>Gender</p>
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+        </select>
+        </label>
+        <label for="address">
+                <p>Address</p>
+            <textarea id="address"></textarea>
+        </label>
+        <label for="phone">
+                <p>Phone</p>
+            <input type="text" placeholder="eg.9871232541" id="phone"><br>
+        </label>
+        <label for="email">
+                <p>Email</p>
+            <input type=email" placeholder="eg.abc@gmail.com" id="email"><br>
+        </label>
+        <button id="Submit">Submit</button>
+    </div>
+    <script>
+        $("document").ready(function(){
+                $("#Submit").click(
+                function(){
+                    console.log("hello");
+                    validate();})
+                });
+
+                
+        function validate(){
+            var name=$("#name").val();
+            var surname=$("#surname").val();
+            var gender=$("#gender").val();
+            var address=$("#address").val();
+            var phone=$("#phone").val();
+            var email=$("email").val();
+            let count=0;
+            if(name==="")
+            {
+                $("h3").append("Username is empty");
+                count=1;
+            }
+            if(surname==="")
+            {
+                $("h3").html("Surname is empty");
+                count=1;
+            }
+            if(gender==="")
+            {
+                $("h3").html("gender is empty");
+                count=1;
+            }
+            if(address==="")
+            {
+                $("h3").html("Address is empty");
+                count=1;
+            }
+            if(phone==="")
+            {
+                $("h3").html("Phone Number is empty");
+                count=1;
+            }
+            if(email==="")
+            {
+                $("h3").html("Email Number is empty");
+                count=1;
+            }
+            if(count===0)
+            {
+            alert(" "+name+" "+surname+" "+gender+" "+address+" "+phone+" ");
+            }
+        }
+
+
+    </script>
+</body>
+</html>

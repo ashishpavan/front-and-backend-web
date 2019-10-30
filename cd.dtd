@@ -1,0 +1,6 @@
+<!ELEMENT cd (album+)>
+<!ELEMENT album (singer,production,name,type)>
+<!ELEMENT singer (#PCDATA)>
+<!ELEMENT production (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>

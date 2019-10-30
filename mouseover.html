@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mouseover</title>
+</head>
+<body>
+    <label for="name">
+        <h3>UserName</h3>
+        <input type="text" placeholder="eg.pavan" id="username">
+    </label>
+    <label for="password">
+        <h3>Password</h3>
+        <input type="text" id="password">
+    </label>
+    <button onclick="check()">Submit</button>
+    <h2></h2>
+</body>
+</html>
+<script>
+
+var username=document.querySelector("#username");
+username.addEventListener("mouseover",function(){
+        this.style.backgroundColor="Yellow";
+});
+username.addEventListener("mouseout",function(){
+        this.style.backgroundColor="gray";
+});
+function check(){
+    console.log("hello");
+    var reg=/^[a-zA-Z0-9]+$/;
+    var password=document.querySelector("#password");
+    console.log(" "+password.value);
+    if(reg.test(password.value)===false)
+    {
+        var h2=document.querySelector("h2");
+        h2.innerHTML="sorry put correct and unique password";
+    }
+    else if(password.value.length<12)
+    {
+        var h2=document.querySelector("h2");
+        h2.innerHTML="sorry put password of length more than 12";
+    }
+    else{
+        console.log("correct password");
+    }
+}
+
+</script>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE groceries SYSTEM "any.dtd" >
+<?xml-stylesheet type="text/xsl" href="grocery.xsl"?>
+    <!-- item,quantity,price,brand,etc -->
+<groceries>
+    <grocery>
+        <item> Tomato </item>
+        <quantity> 25kg</quantity>
+        <price> 45rs/kg</price>
+        <brand> Patangali </brand>
+    </grocery>
+    <grocery>
+        <item> Apple </item>
+        <quantity> 15kg</quantity>
+        <price> 100rs/kg</price>
+        <brand> Tropicana </brand>
+    </grocery>
+    <grocery>
+        <item> Pear </item>
+        <quantity> 5kg</quantity>
+        <price> 100rs/kg</price>
+        <brand> paperboat </brand>
+    </grocery>
+</groceries>

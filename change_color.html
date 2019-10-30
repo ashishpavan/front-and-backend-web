@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change color</title>
+</head>
+<body>
+    <select id="color" >
+        <option>Fuchsia</option>
+        <option>Gray</option>
+    </select>
+    <select id="background-color" >
+        <option>Fuchsia</option>
+        <option>Yellow</option>
+        <option>Aqua</option>
+        <option>Teal</option>
+        <option>white</option>
+    </select>
+    <div id="div">Change color</div>
+</body>
+</html>
+<script>
+        window.addEventListener("load",function(){
+            button=document.querySelector("#div");
+        button.addEventListener("click",()=>{
+            console.log("hello");
+
+            var e = document.getElementById("color");
+            var strUser = e.options[e.selectedIndex].value;
+            document.body.style.color=strUser;
+            var e = document.getElementById("background-color");
+            var strUser = e.options[e.selectedIndex].value;
+            document.body.style.backgroundColor=strUser;
+
+            
+        });
+
+
+        });
+    </script>

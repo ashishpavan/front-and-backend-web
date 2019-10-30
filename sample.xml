@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cd SYSTEM "cd.dtd">
+<cd>
+<album>
+    <singer>Taylor Swift</singer>
+    <production>Taylor Swift</production>
+    <name>Blank Space</name>
+    <type>Love</type>
+</album>
+<album>
+    <singer>Ed Sheeran</singer>
+    <production>Ed Sheeran</production>
+    <name>Perfect</name>
+    <type>Love</type>
+</album>
+<album>
+    <singer>John Cooper</singer>
+    <production>Skillet</production>
+    <name>Legendary</name>
+    <type>Rock</type>
+</album>
+</cd>
